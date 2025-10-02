@@ -6,16 +6,16 @@ class RestaurantDataAnalyzer:
         self.data = pd.read_csv(data_file)
 
     def analyze_data(self):
-        # Phân tích cơ bản dữ liệu
+        # Basic data analysis
         print(self.data.describe())
 
     def visualize_data(self):
-        # Trực quan hóa dữ liệu
+        # Data visualization
         plt.figure(figsize=(10, 5))
         plt.bar(self.data['Restaurant_Name'], self.data['Rating'])
-        plt.title('Đánh Giá Nhà Hàng')
-        plt.xlabel('Tên Nhà Hàng')
-        plt.ylabel('Đánh Giá')
+        plt.title('Restaurant Ratings')
+        plt.xlabel('Restaurant Name')
+        plt.ylabel('Rating')
         plt.xticks(rotation=90)
         plt.tight_layout()
         plt.show()
