@@ -10,7 +10,7 @@ class RestaurantDataAnalyzer:
         print(self.data.describe())
 
     def visualize_data(self):
-        # Data visualization
+        # Visualize restaurant ratings using a bar chart
         plt.figure(figsize=(12, 6))  # Increased figure size for better visibility
         plt.bar(self.data['Restaurant_Name'], self.data['Rating'], color='skyblue')
         plt.title('Restaurant Ratings', fontsize=16)
