@@ -11,12 +11,12 @@ class RestaurantDataAnalyzer:
 
     def visualize_data(self):
         # Data visualization
-        plt.figure(figsize=(10, 5))
+        plt.figure(figsize=(12, 6))  # Increased figure size for better visibility
         plt.bar(self.data['Restaurant_Name'], self.data['Rating'], color='skyblue')
-        plt.title('Restaurant Ratings')
-        plt.xlabel('Restaurant Name')
-        plt.ylabel('Rating')
-        plt.xticks(rotation=90)
+        plt.title('Restaurant Ratings', fontsize=16)
+        plt.xlabel('Restaurant Name', fontsize=14)
+        plt.ylabel('Rating', fontsize=14)
+        plt.xticks(rotation=90, fontsize=10)
         plt.tight_layout()
         plt.show()
 
