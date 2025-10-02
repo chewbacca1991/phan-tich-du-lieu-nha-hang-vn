@@ -12,7 +12,7 @@ class RestaurantDataAnalyzer:
     def visualize_data(self):
         # Data visualization
         plt.figure(figsize=(10, 5))
-        plt.bar(self.data['Restaurant_Name'], self.data['Rating'])
+        plt.bar(self.data['Restaurant_Name'], self.data['Rating'], color='skyblue')
         plt.title('Restaurant Ratings')
         plt.xlabel('Restaurant Name')
         plt.ylabel('Rating')
